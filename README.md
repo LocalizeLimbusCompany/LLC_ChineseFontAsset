@@ -38,6 +38,7 @@
 6. 选择 AssetBundles 窗格（如果不小心关闭了，可以从 `Window->AssetBundle Browser` 菜单调出） 的 `Configure` 栏。在左侧列表按下右键弹出菜单，选择 `Add new bundle` 创建新的 AB 包，取名为你想要的名字。
 ![Step3](img/tmp_step3.png)
 7. 将 1. 中拖入的字体，和 4. 中创建的 `Prefab` ，都拖入右侧的窗格。
+![Step6](img/legacy_step6.png)
 5. 切换到 `Build` 栏，在 `Output Path` 中选择你要保存到的路径，最后按下 `Build`，稍等片刻即可在 `Output Path` 看到打包好的文件。
 ![Step4](img/tmp_step5.png)
 
