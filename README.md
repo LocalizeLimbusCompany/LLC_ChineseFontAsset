@@ -30,7 +30,7 @@
 2. 在当前Scene中创建一个 `UI->Legacy->Text` 组件。
 ![Step1](img/legacy_step1.png)
 3. 将要打包的字体拖动到新建的 `Text` 组件的 `Font` 属性上。
-![Step1](img/legacy_step2.png)
+![Step1](img/Legacy_step2.png)
 4. 在 `Asset` 栏新建一个 `Create->Prefab`。
 ![Step1](img/legacy_step4.png)
 5. 将 2. 创建的 `Text` 组件拖动到 4. 创建的 `Prefab` 上，会弹出是否替换相关的提示，选择 `Replace Anyway`
