@@ -42,6 +42,18 @@
 5. 切换到 `Build` 栏，在 `Output Path` 中选择你要保存到的路径，最后按下 `Build`，稍等片刻即可在 `Output Path` 看到打包好的文件。
 ![Step4](img/tmp_step5.png)
 
+### 一劳永逸地解决缺字：DynamicAtlasPopulation
+
+比起生成固定的图像，你也可以让tmp字体从字体源文件，根据需求动态生成字体。这可解决绝大多数缺字问题，但不确定是否对任何项目都兼容。
+
+通过选择Dynamic，你的字体文件（这个repo里为SourceHanSansSC-Bold.otf）会被一起打包，并在后续根据需要动态添加字符到字符集中并自动生成纹理。（也就是说，TMP_SourceText.txt的作用被完全取缔了。）
+
+进入Inspection窗口，你可以根据下图来进行设置。
+
+![DynamicAtlasPopulation](img/DynamicAtlasPopulation.png)
+
+此处勾选Multi Atlas Textures是为了允许字体生成多张纹理，以防止生成的纹理所需的空间超过你设置的Width和Height。
+
 ## 如何使用
 
 要在代码中使用上面导入的文本，需要在代码中对合适的函数进行 Hook。下面给出对于 `TMP` 和 `UnityEngine.UI.Text` 的范例：
