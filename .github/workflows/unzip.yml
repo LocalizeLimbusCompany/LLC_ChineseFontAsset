@@ -20,4 +20,4 @@ jobs:
       run: sudo apt-get install p7zip-full -y
 
     - name: Extract 7z
-      run: 7z x tmpchinesefont.7z -o/assets
+      run: 7z x ./assets/tmpchinesefont.7z -o./assets
