@@ -1,21 +1,25 @@
 name: Upload Chinese Font Asset
+
 on:
   workflow_dispatch:
+
   push:
     branches: [ master ]
     paths:
-      - 'assets/**'
+      - 'assets/tmpchinesefont'
+
 jobs:
   build:
     runs-on: windows-latest
+
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        lfs: true
+      uses: actions/checkout@v4
+
     - name: Run build script
       run: |
           ./build.ps1
+
     - name: Create Upload Release
       uses: svenstaro/upload-release-action@v2
       with:
