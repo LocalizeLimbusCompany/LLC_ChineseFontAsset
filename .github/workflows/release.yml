@@ -1,4 +1,4 @@
-name: Unzip Chinese Font Asset
+name: Unzip & Release Chinese Font Asset
 
 on:
   workflow_dispatch:
@@ -21,9 +21,6 @@ jobs:
 
     - name: Extract 7z
       run: 7z x -y ./assets/tmpchinesefont.7z -o./assets
-
-    - name: Checkout code
-      uses: actions/checkout@v4
 
     - name: Run build script
       run: |
