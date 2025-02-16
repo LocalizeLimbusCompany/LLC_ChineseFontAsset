@@ -21,10 +21,7 @@ jobs:
 
     - name: Extract 7z
       run: 7z x -y ./assets/tmpchinesefont.7z -o./assets
-  build:
-    runs-on: windows-latest
 
-    steps:
     - name: Checkout code
       uses: actions/checkout@v4
 
